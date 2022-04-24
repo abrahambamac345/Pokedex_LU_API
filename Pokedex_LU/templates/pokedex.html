@@ -8,27 +8,24 @@
     <title>POKEAPI</title>
 </head>
 <body>
-
-    <div id="titulo">¡Pokedex! Tabla API 
-      </div>
-
-    <section id="containertarj">
-        {%for i in range(0, len)%}
-        <div class="container">
-            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
-                    <strong>ID:</strong> #{{number[i]}}
-                    </span>
-            <img src={{photo[i]}} class="card-img-top mx-auto d-block" alt="Foto Pokemon" style="width:50%"alt="Foto Pokemon">
-            <hr size="5px">
-            <div class="card-body">
-                <h2 class="card-title text-center text-uppercase">{{pokename[i]}}</h5>
-            </div>
+<div id="titulo">¡Pokedex! Tabla API 
+    </div>
+<section id="containertarj">
+    {%for i in range(0, len)%}
+    <div class="container">
+    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+        <strong>ID:</strong> #{{number[i]}}
+    </span>
+        <img src={{photo[i]}} class="card-img-top mx-auto d-block" alt="Foto Pokemon" style="width:50%"alt="Foto Pokemon">
+        <hr size="5px">
+        <div class="card-body">
+        <h2 class="card-title text-center text-uppercase">{{pokename[i]}}</h5>
+        </div>
             <div class="card-footer">
-                <p class="card-text text-center"><strong>Tipo :</strong> {{types[i]}} </p>
+            <p class="card-text text-center"><strong>Tipo :</strong> {{types[i]}} </p>
             </div>
         </div>
-        {%endfor%}
-    </section>
-
+    {%endfor%}
+ </section>
 </body>
 </html>
